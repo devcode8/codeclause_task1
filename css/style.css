@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Kanit:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+*:focus {
+    outline: none;
+  }
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+header h1{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+}
+.option{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.option button{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.converter{
+    display: none;
+    text-align: center;
+    width: 900px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(10.8px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 150px;
+}
+.converter h2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    padding-top: 20px;
+} 
+#temperature{
+    height: 200px;
+    margin-top: 0px;
+}
+.conatiner{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.input label{
+    text-transform: capitalize;
+}
